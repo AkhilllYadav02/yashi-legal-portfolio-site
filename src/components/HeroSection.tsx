@@ -19,37 +19,58 @@ const HeroSection = () => {
         }} />
       </div>
       
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto animate-fade-in">
-        <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Yashi Chaturvedi
-        </h1>
-        
-        <div className="mb-8">
-          <p className="text-xl md:text-2xl font-light mb-2 text-legal-cream">
-            LLB Student | Legal Research Enthusiast | Future Advocate
-          </p>
-        </div>
-        
-        <div className="mb-12">
-          <p className="text-lg md:text-xl font-light text-legal-cream/90 max-w-2xl mx-auto leading-relaxed">
-            "Committed to justice, research, and making an impact in the legal field."
-          </p>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            onClick={() => scrollToSection('#experience')}
-            className="bg-legal-gold hover:bg-legal-gold/90 text-legal-navy font-semibold px-8 py-3 text-lg hover-lift"
-          >
-            View My Work
-          </Button>
-          <Button 
-            onClick={() => scrollToSection('#contact')}
-            variant="outline" 
-            className="border-2 border-white text-white hover:bg-white hover:text-legal-navy px-8 py-3 text-lg hover-lift"
-          >
-            Let's Connect
-          </Button>
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto animate-fade-in">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+          {/* Profile Image */}
+          <div className="w-full lg:w-1/3 flex justify-center lg:justify-start order-first lg:order-last">
+            <div className="relative">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-legal-gold shadow-2xl hover-lift">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=800"
+                  alt="Yashi Chaturvedi - LLB Student"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-legal-gold rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-white rounded-full opacity-80"></div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="w-full lg:w-2/3 text-center lg:text-left">
+            <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
+              Yashi Chaturvedi
+            </h1>
+            
+            <div className="mb-6 lg:mb-8">
+              <p className="text-lg sm:text-xl md:text-2xl font-light mb-2 text-legal-cream">
+                LLB Student | Legal Research Enthusiast | Future Advocate
+              </p>
+            </div>
+            
+            <div className="mb-8 lg:mb-12">
+              <p className="text-base sm:text-lg md:text-xl font-light text-legal-cream/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                "Committed to justice, research, and making an impact in the legal field."
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <Button 
+                onClick={() => scrollToSection('#experience')}
+                className="bg-legal-gold hover:bg-legal-gold/90 text-legal-navy font-semibold px-6 sm:px-8 py-3 text-base sm:text-lg hover-lift w-full sm:w-auto"
+              >
+                View My Work
+              </Button>
+              <Button 
+                onClick={() => scrollToSection('#contact')}
+                variant="outline" 
+                className="border-2 border-white text-white hover:bg-white hover:text-legal-navy px-6 sm:px-8 py-3 text-base sm:text-lg hover-lift w-full sm:w-auto"
+              >
+                Let's Connect
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
       
