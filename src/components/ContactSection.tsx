@@ -40,7 +40,7 @@ const ContactSection = () => {
             <span className="text-legal-cream"> Connect!</span>
           </h2>
           <p className="text-lg text-legal-cream/90 max-w-2xl mx-auto">
-            Interested in legal research collaboration, internship opportunities, or just want to discuss law? I'd love to hear from you.
+            Interested in legal research collaboration, social work projects, internship opportunities, or just want to discuss law and social justice? I'd love to hear from you.
           </p>
         </div>
         
@@ -56,17 +56,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-legal-cream/80">yashichaturvedi@email.com</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-legal-gold rounded-lg flex items-center justify-center mr-4">
-                    <span className="text-legal-navy font-bold">💼</span>
-                  </div>
-                  <div>
-                    <div className="font-semibold">LinkedIn</div>
-                    <div className="text-legal-cream/80">linkedin.com/in/yashi-chaturvedi</div>
+                    <div className="text-legal-cream/80">vedicyashi2.o@gmail.com</div>
                   </div>
                 </div>
                 
@@ -75,8 +65,18 @@ const ContactSection = () => {
                     <span className="text-legal-navy font-bold">📱</span>
                   </div>
                   <div>
-                    <div className="font-semibold">Instagram</div>
-                    <div className="text-legal-cream/80">@yashi.law</div>
+                    <div className="font-semibold">Phone</div>
+                    <div className="text-legal-cream/80">+91 7985223774</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-legal-gold rounded-lg flex items-center justify-center mr-4">
+                    <span className="text-legal-navy font-bold">📍</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Location</div>
+                    <div className="text-legal-cream/80">Lucknow, Uttar Pradesh</div>
                   </div>
                 </div>
               </div>
@@ -91,19 +91,23 @@ const ContactSection = () => {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-legal-gold rounded-full mr-3"></div>
-                  Internship Opportunities
+                  Social Work Projects
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-legal-gold rounded-full mr-3"></div>
-                  Legal Writing Projects
+                  Women's Safety & Empowerment Initiatives
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-legal-gold rounded-full mr-3"></div>
-                  Moot Court Preparations
+                  Educational Access Programs
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-legal-gold rounded-full mr-3"></div>
-                  Legal Awareness Programs
+                  Human Rights Advocacy
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-legal-gold rounded-full mr-3"></div>
+                  Mental Health Awareness Campaigns
                 </li>
               </ul>
             </div>

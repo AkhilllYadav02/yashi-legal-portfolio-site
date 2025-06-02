@@ -45,13 +45,16 @@ const HeroSection = () => {
             
             <div className="mb-6 lg:mb-8">
               <p className="text-lg sm:text-xl md:text-2xl font-light mb-2 text-legal-cream">
-                LLB Student | Legal Research Enthusiast | Future Advocate
+                LLB Student | Social Work Graduate | Justice Advocate
+              </p>
+              <p className="text-base sm:text-lg text-legal-cream/80">
+                📧 vedicyashi2.o@gmail.com | 📱 +91 7985223774 | 📍 Lucknow
               </p>
             </div>
             
             <div className="mb-8 lg:mb-12">
               <p className="text-base sm:text-lg md:text-xl font-light text-legal-cream/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                "Committed to justice, research, and making an impact in the legal field."
+                "Committed to using my academic background and practical experience to promote justice and social welfare through empathy, advocacy, and social justice."
               </p>
             </div>
             
