@@ -8,12 +8,13 @@ import { ExternalLink, Linkedin } from 'lucide-react';
 const BlogSection = () => {
   const blogPosts = [
     {
-      title: "Why Legal Awareness is the Need of the Hour",
-      excerpt: "Exploring the importance of legal literacy in empowering citizens and strengthening democratic institutions...",
-      date: "March 2024",
-      category: "Legal Awareness",
-      readTime: "5 min read",
-      linkedinUrl: "https://www.linkedin.com/pulse/legal-awareness-need-hour-yashi-chaturvedi"
+      title: "RCB Victory Parade Stampede: A Celebration That Turned Into a Catastrophe",
+excerpt: "What was supposed to be a historic celebration of RCB’s first IPL title on June 4, 2025, ended in a tragic stampede near M. Chinnaswamy Stadium, claiming 11 lives and injuring over 30 due to poor planning and lack of crowd control.",
+date: "2025-06-05",
+category: "Public Safety",
+readTime: "4 min read",
+
+      linkedinUrl: "https://www.linkedin.com/posts/yashi-chaturvedi-4b398a367_rcbstampede-eventsafety-crowdmanagement-activity-7336602402197843968-qtU9?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADF6_rEBpkpr4a13N2gFV13axbNkPn_jTLU"
     },
     {
       title: "Case Analysis: Kesavananda Bharati v. State of Kerala",
