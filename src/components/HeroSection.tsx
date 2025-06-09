@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center legal-gradient text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center legal-gradient text-white overflow-hidden pt-20 md:pt-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -26,12 +26,12 @@ const HeroSection = () => {
         }} />
       </div>
       
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto animate-fade-in">
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto animate-fade-in py-8 sm:py-12 md:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
           {/* Profile Image */}
           <div className="w-full lg:w-1/3 flex justify-center lg:justify-start order-first lg:order-last">
             <div className="relative">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-legal-gold shadow-2xl hover-lift">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-legal-gold shadow-2xl hover-lift">
                 <img 
                   src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=800"
                   alt="Yashi Chaturvedi - LLB Student"
@@ -46,43 +46,43 @@ const HeroSection = () => {
 
           {/* Content */}
           <div className="w-full lg:w-2/3 text-center lg:text-left">
-            <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-6 leading-tight">
+            <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
               Yashi Chaturvedi
             </h1>
             
-            <div className="mb-4 lg:mb-8">
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light mb-2 text-legal-cream">
+            <div className="mb-6 lg:mb-8">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light mb-3 text-legal-cream">
                 LLB Student | Social Work Graduate | Justice Advocate
               </p>
-              <p className="text-sm sm:text-base lg:text-lg text-legal-cream/80">
+              <p className="text-sm sm:text-base lg:text-lg text-legal-cream/80 break-words">
                 📧 vedicyashi2.o@gmail.com | 📱 +91 7985223774 | 📍 Lucknow
               </p>
             </div>
             
-            <div className="mb-6 lg:mb-12">
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-legal-cream/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed px-4 lg:px-0">
+            <div className="mb-8 lg:mb-12">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-legal-cream/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 "Committed to using my academic background and practical experience to promote justice and social welfare through empathy, advocacy, and social justice."
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start items-center px-4 lg:px-0">
+            <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center lg:justify-start items-stretch sm:items-center">
               <Button 
                 onClick={() => scrollToSection('#experience')}
-                className="bg-legal-gold hover:bg-legal-gold/90 text-legal-navy font-semibold px-4 sm:px-6 lg:px-8 py-2 lg:py-3 text-sm sm:text-base lg:text-lg hover-lift w-full sm:w-auto"
+                className="bg-legal-gold hover:bg-legal-gold/90 text-legal-navy font-semibold px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg hover-lift min-h-[48px] w-full sm:w-auto"
               >
                 View My Work
               </Button>
               <Button 
                 onClick={handleViewTemplates}
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-legal-navy px-4 sm:px-6 lg:px-8 py-2 lg:py-3 text-sm sm:text-base lg:text-lg hover-lift w-full sm:w-auto"
+                className="border-2 border-white text-white hover:bg-white hover:text-legal-navy px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg hover-lift min-h-[48px] w-full sm:w-auto"
               >
                 Legal Templates
               </Button>
               <Button 
                 onClick={() => scrollToSection('#contact')}
                 variant="outline" 
-                className="border-2 border-legal-gold text-legal-gold hover:bg-legal-gold hover:text-legal-navy px-4 sm:px-6 lg:px-8 py-2 lg:py-3 text-sm sm:text-base lg:text-lg hover-lift w-full sm:w-auto"
+                className="border-2 border-legal-gold text-legal-gold hover:bg-legal-gold hover:text-legal-navy px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg hover-lift min-h-[48px] w-full sm:w-auto"
               >
                 Let's Connect
               </Button>
@@ -92,9 +92,9 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 lg:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button onClick={() => scrollToSection('#about')} className="text-white/70 hover:text-white">
-          <svg className="w-5 h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </button>
