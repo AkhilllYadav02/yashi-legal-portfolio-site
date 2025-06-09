@@ -97,7 +97,7 @@ const BlogSection = () => {
           </p>
           <Button 
             className="legal-gradient text-white hover:opacity-90 px-6 lg:px-8 py-3 text-sm lg:text-base flex items-center gap-2 mx-auto"
-            onClick={() => window.open('https://www.linkedin.com/in/yashi-chaturvedi', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/yashi-chaturvedi-4b398a367/', '_blank')}
           >
             <Linkedin className="w-5 h-5" />
             Visit My LinkedIn Profile
