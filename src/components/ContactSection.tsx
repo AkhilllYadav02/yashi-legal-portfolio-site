@@ -1,35 +1,22 @@
 
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const { toast } = useToast();
+  useEffect(() => {
+    // Load Tally embed script
+    const script = document.createElement('script');
+    script.innerHTML = `
+      var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+    `;
+    document.body.appendChild(script);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+    return () => {
+      // Cleanup script on unmount
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section id="contact" className="section-padding legal-gradient text-white">
@@ -79,6 +66,23 @@ const ContactSection = () => {
                     <div className="text-legal-cream/80">Lucknow, Uttar Pradesh</div>
                   </div>
                 </div>
+
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-legal-gold rounded-lg flex items-center justify-center mr-4">
+                    <span className="text-legal-navy font-bold">💼</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">LinkedIn</div>
+                    <a 
+                      href="https://www.linkedin.com/in/yashi-chaturvedi-4b398a367/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-legal-cream/80 hover:text-legal-gold transition-colors underline"
+                    >
+                      Visit My LinkedIn Profile
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -117,49 +121,19 @@ const ContactSection = () => {
             <CardContent className="p-8">
               <h3 className="font-playfair text-2xl font-bold mb-6 text-white">Send a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Input
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-white/10 border-white/30 text-white placeholder-white/70"
-                  />
-                </div>
-                
-                <div>
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-white/10 border-white/30 text-white placeholder-white/70"
-                  />
-                </div>
-                
-                <div>
-                  <Textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="bg-white/10 border-white/30 text-white placeholder-white/70"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit"
-                  className="w-full bg-legal-gold hover:bg-legal-gold/90 text-legal-navy font-semibold py-3"
-                >
-                  Send Message
-                </Button>
-              </form>
+              <div className="rounded-lg overflow-hidden">
+                <iframe 
+                  data-tally-src="https://tally.so/embed/3jqWqY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                  loading="lazy" 
+                  width="100%" 
+                  height="276" 
+                  frameBorder="0" 
+                  marginHeight={0} 
+                  marginWidth={0} 
+                  title="Send a Message"
+                  className="w-full"
+                />
+              </div>
             </CardContent>
           </Card>
         </div>
