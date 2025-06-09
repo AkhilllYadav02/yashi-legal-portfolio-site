@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-legal-gold shadow-2xl hover-lift">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=800"
+                  src="https://media.licdn.com/dms/image/v2/D4E03AQFBk42ekckz8A/profile-displayphoto-shrink_800_800/B4EZcK3COhHsAc-/0/1748233890267?e=1755129600&v=beta&t=FpS5UDPJc1HaGNcJGgIkBShyfE-DNulLTMQ7ofIahWA"
                   alt="Yashi Chaturvedi - LLB Student"
                   className="w-full h-full object-cover"
                 />
